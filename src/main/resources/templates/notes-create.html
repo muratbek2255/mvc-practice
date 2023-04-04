@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Note title</th>
+        <th>Note Content</th>
+        <th>Note Picture</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr th:each="note : ${notes}">
+        <td th:text="${note.title}"></td>
+        <td th:text="${note.content}"></td>
+    </tr>
+    </tbody>
+</table>
